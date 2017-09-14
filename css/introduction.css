@@ -1,11 +1,14 @@
-html,body{
-	height:100%;
+html{
+	height: 100%;
 }
+	
+
 body{
+	height: 100%;
 	margin:0;
 	background-image: url("../images/background.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; 
 }
 
 .b_mask{
@@ -17,7 +20,7 @@ body{
 
 .main{
 	width: 79.2%;
-	height: 81.5%;
+	min-height: 81.5%;
 	margin: 4.7% auto;
 	border-radius: 10px;
 	display: flex;
@@ -30,11 +33,15 @@ body{
 	flex-basis: 59.5%;
 	background-image: url("../images/background.jpg");
 	background-size: cover;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .intro{
-	height: 100%;;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	
 	
 }
@@ -42,10 +49,11 @@ body{
 
 
 .cityName{
-	border-bottom: solid 1px;
+	border-bottom: solid 2px rgba(255,255,255,0.5);
 	color: #fff;
-	margin: 44.5% 0 0 15.1%;
-    padding-bottom:;
+	margin-bottom : 17.016%;
+	margin-left: 9.11%;
+	box-shadow: 0px -1px 1px  purple inset;
 }
 h1{
 	font-size: 110px;
@@ -59,12 +67,12 @@ h1{
 
 
 .article{
-	height: 68%;
 	padding:10% 20% 10% 10%;
 	background-image: url("../images/intro_bkg.png");
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-color: white;
+	flex-grow: 2;
 }
 
 .featureName{
@@ -79,7 +87,8 @@ h1{
 	color: #989ba0;
 }
 .pics{
-	height: 111.83px;
+	height: 0;
+	padding-bottom: 25%;
 	background-color: #222629;
 	color: white;
     }
@@ -87,9 +96,10 @@ h1{
 
 .pics img{
 	width: 25%;
-	height: 111.83px;
 	display: inline-block;
+	vertical-align: top;
 }
+
 
 .pics p{
 	float: right;
