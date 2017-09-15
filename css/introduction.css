@@ -38,6 +38,7 @@ body{
 }
 
 .intro{
+	flex-basis: 40.5%;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
@@ -94,15 +95,15 @@ h1{
     }
 
 
-.pics img{
+.pics img,.pics p{
 	width: 25%;
 	display: inline-block;
 	vertical-align: top;
 }
 
-
 .pics p{
-	float: right;
-	padding: 40px;
-	margin: 1px;
+	text-align: center;
+	padding-top: 6%;
 }
+
+
